@@ -21,3 +21,12 @@ if __name__ == '__main__':
     s = input()
     minion_game(s)
     
+    
+#Creamos un código nuevo
+#Definimos la función para elegir la palabra
+def word():
+    while True:
+        wordchoosen = input("Por favor, introduzca la palabra elegida.")
+        if wordchoosen == str(wordchoosen):
+            return wordchoosen
+            break
