@@ -30,3 +30,12 @@ def word():
         if wordchoosen == str(wordchoosen):
             return wordchoosen
             break
+#Establecemos la puntuación de los jugadores
+def minion_game(string):
+  Stuart_score, Kevin_score = 0, 0 
+  for start_idx in range(word):
+      if wordchoosen[i] not in vowels:
+          Stuart_score += len(word) - i
+      else:
+          Kevin_score += len(word) - i
+          
