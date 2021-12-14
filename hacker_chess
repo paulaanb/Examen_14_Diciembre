@@ -107,3 +107,17 @@ while True:
     [' ', ' ', ' '], 
     ]
 
+# Definimos las variables aleatorias
+    x = random.randint(0,2)
+    y = random.randint(0,2)
+    z = random.randint(0,2)
+    a = random.randint(0,2)
+    b = random.randint(0,2)
+    c = random.randint(0,2)
+
+    while x == a:
+        a = random.randint(0,2)
+    while y == b:
+        b = random.randint(0,2)
+    while z == c:
+        c = random.randint(0,2)
