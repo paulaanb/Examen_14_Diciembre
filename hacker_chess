@@ -98,3 +98,12 @@ def block(line, column):
         error = False
         
     return error   
+
+# Creamos un bucle infinito para cada jugada nueva
+while True:
+    chessboard = [
+    [' ', ' ', ' '], 
+    [' ', ' ', ' '],
+    [' ', ' ', ' '], 
+    ]
+
