@@ -6,3 +6,10 @@ import re
 import sys
 
 
+#Empezamos a definir la función de verticalrooks
+def verticalRooks(r1, r2):
+    xors = 0
+    for y1,y2 in zip(r1,r2):
+        xors ^= (abs(y1-y2) - 1)
+    return "player-2" if xors != 0 else "player-1"
+
