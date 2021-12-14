@@ -38,3 +38,10 @@ if __name__ == '__main__':
         fptr.write(result + '\n')
         
     fptr.close()
+
+#Creamos otro código nuevo
+#Importamos librerias a utilizar
+import random
+
+#Utilizamos el tablero del ajedrez como ayuda
+def printboard(chessboard):
