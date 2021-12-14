@@ -131,3 +131,18 @@ while True:
     chessboard[c][2] = chr(0x265C)
 
     printboard(chessboard) 
+
+#Los posibles errores
+mistakex = block(x, 0)
+    mistakey = block(y, 1)
+    mistakez = block(z, 2)
+    mistakea = block(a, 0)
+    mistakeb = block(b, 1)
+    mistakec = block(c, 2)
+
+    if mistakex and mistakey and mistakez == True:   
+        print("El jugador 1 no tiene la posibilidad de moverse, debemos volver a crear el tablero")
+    elif mistakea and mistakeb and mistakec == True:   
+        print("El jugador 2 no no tiene la posibilidad de moverse, debemos volver a crear el tablero")
+    else:
+        break
