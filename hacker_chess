@@ -52,3 +52,30 @@ def printboard(chessboard):
         Counter += 1
     print("\n")
 #Terminamos el tablero
+
+#Definimos los movimientos
+def movement(line, column):
+    if line == 0:
+            chessboard[line+1][column] = chessboard[line][column]
+            chessboard[line][column] = ' '
+    elif line == 1:
+        if chessboard[line+1][column] != ' ':
+            chessboard[line-1][column] = chessboard[line][column]
+            chessboard[line][column] = ' '
+        else:
+            chessboard[line+1][column] = chessboard[fila][column]
+            chessboard[line][column] = ' '
+    elif line == 2:
+        chessboard[line-1][column] = chessboard[line][column]
+        chessboard[line][column] = ' '
+
+def change(line, column):
+    if  line == 0:
+        line += 1
+    elif line == 1:
+        if chessboard[line+1][column] != ' ':
+            line -= 1
+        else:
+            line += 1
+    elif line == 2:
+        line -= 1# Devuelve la nueva posicion de la ficha
