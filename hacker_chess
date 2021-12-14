@@ -146,3 +146,36 @@ mistakex = block(x, 0)
         print("El jugador 2 no no tiene la posibilidad de moverse, debemos volver a crear el tablero")
     else:
         break
+    
+turn = random.randint(0, 1)
+while True:
+    if turn == 1:
+        if mistakex == False and mistakea == False:
+            movement(x, 0)
+            x = change(x, 0)
+            mistakea = block(a, 0)
+        elif mistakey == False and mistakeb == False:
+            movement(y, 1)
+            y = change(y, 1)
+            mistakeb = block(b, 1)
+        elif mistakez == False and mistakec == False:
+            movement(z, 2)
+            z = change(z, 2)
+           mistakec = block(c, 2)
+        elif mistakex == False:
+            movement(x, 0)
+            x = change(x, 0)
+           mistakea = block(a, 0)
+        elif mistakey == False:
+            movement(y, 1)
+            y = change(y, 1)
+            mistakeb = block(b, 1)
+        elif mistakez == False:
+            movement(z, 2)
+            z = change(z, 2)
+            mistakec = block(c, 2)
+        else:
+            break
+        turn = 0
+    elif turn == 0:
+        
