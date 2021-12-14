@@ -1,0 +1,8 @@
+#Importamos las librerias que vamos a utilizar para nuestro código
+import math
+import os
+import random
+import re
+import sys
+
+
