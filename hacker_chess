@@ -121,3 +121,13 @@ while True:
         b = random.randint(0,2)
     while z == c:
         c = random.randint(0,2)
+
+# Posicion de las piezas basadas en el ajedrez
+    chessboard[x][0] = chr(0x2656)
+    chessboard[y][1] = chr(0x2656)
+    chessboard[z][2] = chr(0x2656)
+    chessboard[a][0] = chr(0x265C)
+    chessboard[b][1] = chr(0x265C)
+    chessboard[c][2] = chr(0x265C)
+
+    printboard(chessboard) 
