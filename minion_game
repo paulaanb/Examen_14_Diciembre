@@ -1,0 +1,7 @@
+#El código para el Juego de Minion es el siguiente:
+
+def minion_game(string):
+    vowels = 'AEIOU'
+    Stuart_score, Kevin_score = 0, 0
+    length = len(string)
+    
