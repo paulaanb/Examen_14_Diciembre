@@ -78,4 +78,23 @@ def change(line, column):
         else:
             line += 1
     elif line == 2:
-        line -= 1# Devuelve la nueva posicion de la ficha
+        line -= 1
+        
+# Definimos la condicion para cada movimiento
+def block(line, column):
+    if line == 0 and chessboard[line+1][column] != ' ':
+        error = True  
+        
+    elif line == 1:
+        if chessboard[line+1][column] != ' ' and chessboard[line-1][column] != ' ':
+            error = True   
+        else:
+            error = False
+            
+    elif line == 2 and chessboard[line-1][column] != ' ':
+            error = True   
+   
+    else:
+        error = False
+        
+    return error   
