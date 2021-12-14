@@ -4,4 +4,8 @@ def minion_game(string):
     vowels = 'AEIOU'
     Stuart_score, Kevin_score = 0, 0
     length = len(string)
-    
+    #Definimos la puntuación
+    for start_idx in range(length):
+        score = length - start_idx
+        if string[start_idx] in vowels:
+            Kevin_score += score
