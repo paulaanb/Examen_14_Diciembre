@@ -47,4 +47,9 @@ def winner(result):
         print("El ganador ha sido Stuart, con un total de {} puntos".format(result[1]))
     else:
         print("Draw, han empatado.")
-if __name__ =='__main__': 
+if __name__ =='__main__':
+    newword = word() 
+    vowels = ["a", "e", "i", "o", "u"]
+    result = minion_game
+    print ("Los puntos de Stuart son {} y los de Kevin son {}".format(result[1], result[0]))
+    winner(result)
