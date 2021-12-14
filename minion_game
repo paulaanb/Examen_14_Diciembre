@@ -32,10 +32,19 @@ def word():
             break
 #Establecemos la puntuación de los jugadores
 def minion_game(string):
-  Stuart_score, Kevin_score = 0, 0 
-  for start_idx in range(word):
-      if wordchoosen[i] not in vowels:
-          Stuart_score += len(word) - i
-      else:
-          Kevin_score += len(word) - i
-          
+        Stuart_score, Kevin_score = 0, 0 
+        for start_idx in range(word):
+            if wordchoosen[i] not in vowels:
+                Stuart_score += len(word) - i
+            else:
+                Kevin_score += len(word) - i
+        return [Stuart_score, Kevin_score]
+#Establecemos el ganador
+def winner(result):
+    if result[0] > result[1]:
+        print("El ganador ha sido Kevin, con un total de {} puntos".format(result[0]))
+    elif result[0] < result[1]:
+        print("El ganador ha sido Stuart, con un total de {} puntos".format(result[1]))
+    else:
+        print("Draw, han empatado.")
+if __name__ =='__main__': 
